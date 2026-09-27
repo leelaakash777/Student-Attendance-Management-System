@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Attendance Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <h2>Student Portal</h2>
+
+        <ul>
+
+            <li>
+                <a href="#dashboard">Dashboard</a>
+            </li>
+
+            <li>
+                <a href="#students">Students</a>
+            </li>
+
+            <li>
+                <a href="#attendance">Attendance</a>
+            </li>
+
+            <li>
+                <a href="#reports">Reports</a>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+
+        <!-- ================= DASHBOARD ================= -->
+
+        <section id="dashboard">
+
+            <div class="header">
+
+                <h1>Attendance Dashboard</h1>
+
+                <p>
+                    Student Attendance Management System
+                </p>
+
+            </div>
+
+
+            <!-- DASHBOARD CARDS -->
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <h3>Total Students</h3>
+
+                    <p>50</p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>Present Today</h3>
+
+                    <p>42</p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>Absent Today</h3>
+
+                    <p>8</p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>Average Attendance</h3>
+
+                    <p>84%</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= STUDENTS ================= -->
+
+        <section id="students" class="student-section">
+
+            <h2>Student Information</h2>
+
+
+            <!-- SEARCH BOX -->
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    placeholder="Search student name..."
+                >
+
+                <button>Search</button>
+
+            </div>
+
+
+            <!-- STUDENT CARDS -->
+
+            <div class="students">
+
+
+                <!-- STUDENT 1 -->
+
+                <div class="student-card">
+
+                    <h3>Rahul</h3>
+
+                    <p>Student ID: 101</p>
+
+                    <p>Department: CSE</p>
+
+                    <p>Attendance: 92%</p>
+
+                    <div class="progress">
+
+                        <div
+                            class="progress-bar"
+                            style="width: 92%;"
+                        >
+                            92%
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- STUDENT 2 -->
+
+                <div class="student-card">
+
+                    <h3>Anjali</h3>
+
+                    <p>Student ID: 102</p>
+
+                    <p>Department: CSE</p>
+
+                    <p>Attendance: 88%</p>
+
+                    <div class="progress">
+
+                        <div
+                            class="progress-bar"
+                            style="width: 88%;"
+                        >
+                            88%
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- STUDENT 3 -->
+
+                <div class="student-card">
+
+                    <h3>Arjun</h3>
+
+                    <p>Student ID: 103</p>
+
+                    <p>Department: ECE</p>
+
+                    <p>Attendance: 76%</p>
+
+                    <div class="progress">
+
+                        <div
+                            class="progress-bar"
+                            style="width: 76%;"
+                        >
+                            76%
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- STUDENT 4 -->
+
+                <div class="student-card">
+
+                    <h3>Priya</h3>
+
+                    <p>Student ID: 104</p>
+
+                    <p>Department: IT</p>
+
+                    <p>Attendance: 95%</p>
+
+                    <div class="progress">
+
+                        <div
+                            class="progress-bar"
+                            style="width: 95%;"
+                        >
+                            95%
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- STUDENT 5 -->
+
+                <div class="student-card">
+
+                    <h3>Kiran</h3>
+
+                    <p>Student ID: 105</p>
+
+                    <p>Department: CSE</p>
+
+                    <p>Attendance: 69%</p>
+
+                    <div class="progress low">
+
+                        <div
+                            class="progress-bar"
+                            style="width: 69%;"
+                        >
+                            69%
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= ATTENDANCE ================= -->
+
+        <section id="attendance" class="attendance-section">
+
+            <h2>Today's Attendance</h2>
+
+
+            <table>
+
+                <thead>
+
+                    <tr>
+
+                        <th>Student ID</th>
+
+                        <th>Name</th>
+
+                        <th>Department</th>
+
+                        <th>Attendance</th>
+
+                        <th>Status</th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+
+                    <tr>
+
+                        <td>101</td>
+
+                        <td>Rahul</td>
+
+                        <td>CSE</td>
+
+                        <td>92%</td>
+
+                        <td>
+                            <span class="present">
+                                Present
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>102</td>
+
+                        <td>Anjali</td>
+
+                        <td>CSE</td>
+
+                        <td>88%</td>
+
+                        <td>
+                            <span class="present">
+                                Present
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>103</td>
+
+                        <td>Arjun</td>
+
+                        <td>ECE</td>
+
+                        <td>76%</td>
+
+                        <td>
+                            <span class="absent">
+                                Absent
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>104</td>
+
+                        <td>Priya</td>
+
+                        <td>IT</td>
+
+                        <td>95%</td>
+
+                        <td>
+                            <span class="present">
+                                Present
+                            </span>
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>105</td>
+
+                        <td>Kiran</td>
+
+                        <td>CSE</td>
+
+                        <td>69%</td>
+
+                        <td>
+                            <span class="absent">
+                                Absent
+                            </span>
+                        </td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+
+        <!-- ================= REPORTS ================= -->
+
+        <section id="reports" class="reports-section">
+
+            <h2>Attendance Reports</h2>
+
+
+            <!-- OVERALL REPORT -->
+
+            <div class="report-box">
+
+                <h3>Overall Attendance</h3>
+
+                <p>
+                    Average Attendance:
+                    <strong>84%</strong>
+                </p>
+
+                <div class="progress">
+
+                    <div
+                        class="progress-bar"
+                        style="width: 84%;"
+                    >
+                        84%
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SUMMARY -->
+
+            <div class="report-box">
+
+                <h3>Attendance Summary</h3>
+
+                <p>Total Students: 50</p>
+
+                <p>Present Today: 42</p>
+
+                <p>Absent Today: 8</p>
+
+            </div>
+
+
+
+            <!-- LOW ATTENDANCE -->
+
+            <div class="report-box warning">
+
+                <h3>⚠ Low Attendance</h3>
+
+                <p>
+                    Kiran - 69%
+                </p>
+
+                <p>
+                    Student needs to improve attendance.
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- FOOTER -->
+
+        <footer>
+
+            <p>
+                © 2026 Student Attendance Management System
+            </p>
+
+        </footer>
+
+
+    </div>
+
+</body>
+
+</html>
